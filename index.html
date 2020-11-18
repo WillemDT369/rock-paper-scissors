@@ -3,12 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <div class="conainer">
-        
+    <div class="container">
+        <div class="scoreboard">
+            <p class="scoreboardText">Scoreboard</p>
+            <div class="result">
+                <p id="results">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+        </div>
+        <div class="choices">   
+            <div id="rock" class="choice" value="rock">
+                <img src="./images/rock2.png" alt="rock">
+            </div>
+            <div id="paper" class="choice" value="paper">
+                <img src="./images/Toilet-Paper.svg" alt="paper">
+            </div>
+            <div id="scissors" class="choice" value="scissors">
+                <img src="./images/scissors4.png" alt="scissors">
+            </div>
+        </div>
+        <div class="message">
+            <p class="actionMessage">Make your move</p>
+            <button class="buttons" type="submit">Start Game</button>
+            <button id="restart" class="buttons" type="submit">Restart Game</button>
+            
+            
+        </div>
     </div>
     
 
