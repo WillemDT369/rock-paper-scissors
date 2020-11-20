@@ -8,30 +8,30 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
+    <div ><img class="image" src="./images/rock-paper-scissors-logo.png" alt="" class="rps-asociation"></div>
     <div class="container">
         <div class="scoreboard">
             <p class="scoreboardText">Scoreboard</p>
-            <div class="result">
-                <p id="results">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                </p>
+            <div id="result"></div>
+            <div class="score">
+                <div id="playerScore">0</div>:
+            <div id="computerScore">0</div>
             </div>
         </div>
         <div class="choices">   
-            <div id="rock" class="choice" value="rock">
+            <div data-playerhand="0" id="rock" class="choice" value="rock">
                 <img src="./images/rock2.png" alt="rock">
             </div>
-            <div id="paper" class="choice" value="paper">
+            <div data-playerhand="1" id="paper" class="choice" value="paper">
                 <img src="./images/Toilet-Paper.svg" alt="paper">
             </div>
-            <div id="scissors" class="choice" value="scissors">
+            <div data-playerhand="2" id="scissors" class="choice" value="scissors">
                 <img src="./images/scissors4.png" alt="scissors">
             </div>
         </div>
         <div class="message">
             <p class="actionMessage">Make your move</p>
-            <button class="buttons" type="submit">Start Game</button>
-            <button id="restart" class="buttons" type="submit">Restart Game</button>
+            <button onclick=" location.reload()" id="restart" class="buttons" type="submit">Restart Game</button>
             
             
         </div>
@@ -46,3 +46,4 @@
     <script src="rock-paper-scissors.js"></script>
 </body>
 </html>
+

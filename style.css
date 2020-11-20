@@ -13,7 +13,14 @@ body{
     align-items: center;
     font-family: 'Fira Sans', sans-serif;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    background-image: url(./images/rock-paper-scissor-background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
+    flex-direction: column;
+    justify-content: start;
+
     
 }
 
@@ -24,12 +31,11 @@ body{
     display: flex;
     padding: 30px;
     flex-direction: column;
-    background-color:rgb(61, 141, 137);
+    background-color:rgba(40, 129, 201, 0.6);
+    box-shadow: -2px 2px 5px 5px rgba(40,105,148,0.5);
+
 }
 
-.scoreboardText{
-    /* margin-top: 50px; */
-}
 
 .scoreboard p{
     font-size: 2rem;
@@ -40,6 +46,10 @@ body{
     font-size: 1rem;
     width: 50%;
     margin: 10px auto 0 auto;
+}
+
+.score{
+    display: flex;
 }
 
 .choices{
@@ -53,8 +63,9 @@ img{
     width: 50px;
 }
 
-.choice{
-    
+.image{
+    width: 100px;
+    margin: 50px;
 }
 
 .buttons{
@@ -77,4 +88,20 @@ img{
     margin: 10px;
 }
 
+.red{
+    border: 2px solid red;
+    border-radius: 50%;
+    padding: 1em;
+}
 
+.green{
+    border: 2px solid green;
+    border-radius: 50%;
+    padding: 1em;
+}
+
+.grey{
+    border: 2px solid grey;
+    border-radius: 50%;
+    padding: 1em;
+}
